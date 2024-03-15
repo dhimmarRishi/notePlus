@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/userpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <div class="main-container">
+      <div class="left">
+        <div class="notePlus">
+          <img src="images\Screenshot 2023-12-16 094357.png" alt="" id="icon" />
+          NotePlus
+        </div>
+        <div class="line"></div>
+        <div class="user">
+          <div class="pic"></div>
+          <div class="userName"><%= user.firstName %></div>
+          <div class="pic"></div>
+        </div>
+        <div class="menu">
+          <div class="option">
+            <div class="icon"><i class="fa-solid fa-note-sticky"></i></div>
+            <div class="content">All Notes</div>
+          </div>
+          <div class="option">
+            <div class="icon"><i class="fa-solid fa-note-sticky"></i></div>
+            <div class="content">Tags</div>
+          </div>
+          <div class="option">
+            <div class="icon"><i class="fa-solid fa-note-sticky"></i></div>
+            <div class="content">Bin</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top-part" onclick="addNote()">
+
+          <div class="addNote" id="addNote">Add a Note</div>
+        </div>
+        <div class="addNotes">
+          <%- include('addNote.ejs') %>
+        </div>
+
+        <div class="userNotes">
+          <%- include('allnotes.ejs') -%>
+        </div>
+        <div class="bottom-part">
+          <div class="copyRight">
+            <div class="c-left">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+            </div>
+            <div class="c-right">
+              <a href="#">NotePlus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function addNote() {
+      console.log(document.getElementById('addNote').style.backgroundColor)
+      if(document.getElementById('addNote').style.backgroundColor == "lightblue"){
+        document.getElementById('addNote').style.backgroundColor = "white";
+        // document.getElementById('addNote').style.color = "#bl";
+      } else {
+        document.getElementById('addNote').style.backgroundColor = "lightBlue"
+        // document.getElementById('addNote').style.color = "white";
+
+      }
+      // console.log(x)
+      if(document.getElementsByClassName('addNotes')[0].style.display == "") {
+        document.getElementsByClassName('addNotes')[0].style.display = "block";
+      } else{
+        document.getElementsByClassName('addNotes')[0].style.display = "";
+      }
+    }
+    console.log("HII")
+  </script>
+</html>

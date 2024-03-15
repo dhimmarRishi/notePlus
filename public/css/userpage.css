@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  background-color: rgb(237, 240, 247);
+  min-width: 100vh;
+  /* overflow: hidden; */
+}
+.main-container{
+  display : flex;
+  margin : 15px;
+  height: 100%;
+  /* background-color: gray; */
+
+}
+
+.left {
+  width: 20%;
+  height: 100vh;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.notePlus{
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+#icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.line{
+  background-color: rgba(128, 128, 128, 0.521);
+  height: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.user {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+
+}
+.pic{
+  height: 45px;
+  width: 45px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; 
+  font-size: 16px;
+
+}
+.option {
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+
+/* ...................Right Part................ */
+
+.right{
+  width: 100%;
+}
+.top-part , .bottom-part{
+  background-color: white;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+.bottom-part > .copyRight {
+  display: flex;
+  justify-content: space-around;
+}
+.c-left {
+  display: flex;
+  flex-direction: row;
+
+}
+.bottom-part > .copyRight > .c-left > a{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.addNote {
+  cursor: pointer;
+  transition-duration: .5s;
+  border-radius: 10px;
+}
+
+
+.addNotes {
+  display:none;
+  /* border: 1px solid gray; */
+  border-radius: 15px;
+  transition-duration: .5s;
+}

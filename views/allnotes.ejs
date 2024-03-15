@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/allnotes.css" />
+  </head>
+  <body>
+    <div class="main-con">
+      <div class="note" style="background-color: antiquewhite">
+        <div class="note-first">
+          <div class="type-con">
+            <img src="" alt="" />
+          </div>
+          <div class="menu">
+            <i></i>
+          </div>
+        </div>
+        <div class="note-title">Weekly Planner</div>
+        <div class="note-content">
+          Virtual Digital Marketing Course every week on Monday, Wednesday and
+          Saturday.Virtual Digital Marketing Course every week on Monday
+        </div>
+        <div class="note-last">10 Jan 2021</div>
+      </div>
+      <% user.notes.forEach((note) => {%>
+      <div class="note">
+        <div class="note-first">
+          <div class="type-con">
+            <img src="" alt="" />
+          </div>
+          <div class="menu">
+            <i></i>
+          </div>
+        </div>
+        <div class="note-title"><%= note.noteTitle %></div>
+        <div class="note-content"><%= note.content %></div>
+        <div class="note-last">10 Jan 2021</div>
+      </div>
+
+      <script>
+        Array.from(document.getElementsByClassName("note"))[
+          Array.from(document.getElementsByClassName("note")).length - 1
+        ].style.backgroundColor = "<%= note.BGC %>";
+      </script>
+      <% }) %>
+    </div>
+  </body>
+</html>

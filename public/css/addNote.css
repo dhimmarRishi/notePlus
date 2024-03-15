@@ -1,0 +1,92 @@
+.con {
+    /* background-color: rgb(86, 85, 85); */
+    border-radius: 10px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.titleCon > input[type = "text" ] {
+    /* background-color: blue; */
+    overflow: auto;
+    padding: 10px;
+    /* border-radius: 25px; */
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid gray;
+    letter-spacing: 2px;
+}
+
+.top , .middle ,.bottom , .end {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    background-color: white;
+}
+.middle {
+    display: block;
+}
+.top {
+    margin-top: 0;
+}
+.top > .titleCon > input[type= "text"] {
+    width: 50vw;
+
+}
+.top > .fav{
+    /* padding-top: 10px; */
+    padding-right: 10px;
+    cursor: pointer;
+}
+.middle > .content{
+    max-width: 78vw;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid gray;
+    letter-spacing: 2px;
+    outline: 0;
+    color: gray;
+}
+input[type = "color"] {
+    width: 20px;
+    outline: 0;
+    border: 0;
+}
+
+.bottom {
+    font-size: 15px;
+}
+.bottom > .bgc-con {
+    line-height: 100%;
+    margin-top: -8px;
+    padding-top: 0;
+}
+.end {
+    margin-bottom: 0;
+}
+input[type = "submit"], input[type = "reset"] {
+    width: 80px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+    background-color: rgb(237, 240, 247);
+    cursor: pointer;
+    transition-duration: .5s;
+    border: 1px solid transparent;
+}
+input[type = "submit"]:hover, input[type = "reset"]:hover {
+    background-color: white;
+    border-color: gray;
+
+}
+textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+}

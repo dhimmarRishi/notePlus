@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/addNote.css" />
+    <script src="../service/addNote.js" type="script"></script>
+  </head>
+  <body>
+    <form action="/userPage" method="post">
+      <div class="con">
+        <div class="top">
+          <div class="titleCon">
+            <input type="text" placeholder="Title..." id="title" name="title" />
+          </div>
+          <div class="fav">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+        <div class="middle">
+          <div
+            class="content"
+            contenteditable="true"
+            id=""
+          >
+          <textarea placeholder="Enter Content ..." name="content" id="content" cols="30" rows="10" ></textarea>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="bgi-con">
+            <label>Choose background image : </label>
+            <input type="file" accept="image/*" id="bgi" name="bgi" />
+          </div>
+          <div class="bgc-con">
+            <label>Choose background color : </label>
+            <input type="color" id="bgc" name="bgc" value="#89E4F0" />
+          </div>
+        </div>
+        <div class="end">
+          <input type="submit" value="OK" />
+          <input type="reset" value="CANCEL" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

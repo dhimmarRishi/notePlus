@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+[type="text"],
+[type="email"],
+[type="password"] {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(202, 209, 255, 0.289);
+  margin: 10px 5px;
+  border: 0.5px;
+  outline: 0;
+  border: 1px solid rgba(128, 128, 128, 0.456);
+  /* width: 30%; */
+  /* width: 10vw; */
+  /* max-width: 35vw; */
+  /* min-width: 5vw; */
+}
+.horCenter {
+  display: flex;
+  justify-content: center;
+}
+.spbet {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+  background-color: rgb(238, 248, 251);
+  /* background-color: blanchedalmond; */
+}
+.con {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 35vw;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 0;
+}
+.title-con {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-con i {
+  font-size: 50px;
+}
+#title {
+  margin: 0 10px;
+}
+.signuptitle {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.ac {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.name,
+.passcon {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.firstNamecon,
+.lastNamecon, 
+.firstName,
+.lastName {
+  /* width: 15vw; */
+  /* min-width: 50%; */
+  width: 100%;
+}
+.email,
+.pass {
+  /* width: 30vw; */
+  width: 100%;
+}
+.agree {
+  font-size: 15px;
+  margin: 20px 0;
+  color: gray;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  margin: 0 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.btn {
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+.al {
+  font-size: 15px;
+  color: gray;
+  margin: 10px;
+}
+.re {
+  margin-top: 20px;
+}
+a {
+  color: black;
+  margin: 0 5px;
+}
+
+@media screen and (max-width : 770px) {
+  .con {
+      width: 60%;
+  }
+}
+@media screen and (max-width : 320px) {
+  .con {
+      width: 80%;
+  }
+}
